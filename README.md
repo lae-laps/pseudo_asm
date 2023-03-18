@@ -83,4 +83,6 @@ count: #0
 max: #5
 ```
 
+Example usage for ASM debugging using the tracetable mode
+
 ![error displaying image -> image.png](image.png?raw=true "Title")
