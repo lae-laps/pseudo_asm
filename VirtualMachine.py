@@ -1,4 +1,4 @@
-# Virtual Machine for the Cambridge A-Level ASM
+# Virtual Machine for pseudo-ASM syntax
 
 import os
 import sys
