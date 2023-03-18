@@ -1254,7 +1254,6 @@ flags:
 
     try:
 
-        #VM.set_debug(True)
         VM.load_source(source)
         VM.run()
 
@@ -1267,3 +1266,4 @@ flags:
     except Exception as err:
         print(f"uncaught exception: {err}")
         exit(1)
+        
