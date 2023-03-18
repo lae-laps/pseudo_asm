@@ -1,6 +1,20 @@
 # Pseudo ASM
 Virtual Machine to run pseudo-ASM syntax
 
+## Usage
+
+```
+usage: asmvm [flags] <sourcefile.s>
+flags:
+	--instruction	show each instruction after each clock_cycles
+	-d, --debug  	enable real time debugging
+	-s, --step   	wait for a predefined time after each cycle
+	-t, --table  	draw a complete trace table for the program - not compatible with other representations
+	--acc        	show accumulator status after each cycle
+	--ix         	show index register status after each cycle
+	--pc         	show program counter status after each cycle
+ ```
+
 ## Syntax
 
 ### Number notation
@@ -43,5 +57,30 @@ Virtual Machine to run pseudo-ASM syntax
  - `IN` give controll to command line and input 1 character (byte) into ACC as ASCII
  - `OUT` output to screen the contents of ACC encoded as ASCII
  - `END` return control to the operating system
+ 
+### Example
+
+```asm
+// Key in 1 character and display the next max (5) characters after in ASCII order
+in
+sto char
+// Output newline character x0A
+ldm &0A
+out
+loop: ldd char
+inc acc
+sto char
+out
+ldd count
+inc acc
+sto count
+cmp max
+jpn loop
+end
+
+char: #0
+count: #0
+max: #5
+```
 
 
