@@ -1,3 +1,7 @@
+# Pseudocode Interpreter
+
+Interpreter for pseudocode syntax
+
 # Pseudo ASM
 Virtual Machine to run pseudo-ASM syntax
 
