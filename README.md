@@ -90,4 +90,4 @@ max: #5
 
 Example usage for ASM debugging using the tracetable mode
 
-![error displaying image -> image.png](image.png?raw=true "Title")
+![error displaying image -> image.png](img/image.png?raw=true "Title")
